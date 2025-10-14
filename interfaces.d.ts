@@ -14,7 +14,7 @@ declare namespace blog.timelineConnector {
     }
 
     interface IFactory {
-        createElement(element: string, options: any, data?: string);
+        createElement(element: string, options: any, data?: string) : any;
     }
     interface IContextParameters {
         tableContext: ITableContext;
@@ -41,7 +41,7 @@ declare namespace blog.timelineConnector {
         };
         getTwoLetterInitialsFromUserName: (userName: string) => string;
         refetchRerenderRecords: () => void;
-        sanitizeContent: (content: string) => string;
+        // sanitizeContent: (content: string) => string;
     }
     interface IRecordSourceInfo {
         name: string;
